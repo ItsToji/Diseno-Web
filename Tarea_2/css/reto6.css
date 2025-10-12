@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f3f3f3;
+}
+
+.mainContainer {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #006aea;
+  color: white;
+}
+
+footer {
+  background-color: #006aea;
+  color: white;
+}
+
+.containerFooter {
+  padding: 20px 0;
+}
+
+.containerParrafos p {
+  margin: 0;
+  padding: 10px;
+}
+
+.faviconFooter {
+  width: 100px;
+  height: auto;
+}
+
+.headerMain {
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.headerMain h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.iconHome {
+  font-size: 25px;
+  color: white;
+}
+
+.iconHome:hover {
+  color: #d1d1d1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Estilos para los retos */
+
+.containerTitulo1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.containerTitulo1 h2 {
+  margin: 0;
+  color: white;
+}
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/ecommerce.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.containerTexts {
+  margin-top: 200px;
+  color: white;
+}
+
+.containerButtons {
+  gap: 20px;
+}
+
+@media (max-width: 360px) {
+  .headerMain {
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .headerMain h1 {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  footer {
+    background-color: #006aea;
+    color: white;
+  }
+
+  .containerParrafos p {
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .faviconFooter {
+    width: 50px;
+    height: auto;
+  }
+
+  .containerTitulo1 {
+    text-align: center;
+  }
+
+  .containerTexts {
+  margin-top: 100px;
+}
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f3f3f3;
+}
+
+.mainContainer {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #006aea;
+  color: white;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #006aea;
+  color: white;
+}
+
+.containerFooter {
+  padding: 20px 0;
+}
+
+.containerParrafos p {
+  margin: 0;
+  padding: 10px;
+}
+
+.faviconFooter {
+  width: 100px;
+  height: auto;
+}
+
+.headerMain {
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.headerMain h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.iconHome {
+  font-size: 25px;
+  color: white;
+}
+
+.iconHome:hover {
+  color: #d1d1d1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Estilos para los retos */
+
+.containerTitulo {
+  margin-top: 25px;
+}
+
+.containerTitulo h2 {
+  margin: 0;
+}
+
+.containerContenido {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.columna1 button {
+  margin-top: 150px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.containerImg {
+  width: 600px;
+  height: auto;
+}
+
+@media (max-width: 360px) {
+  .headerMain {
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .headerMain h1 {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  footer {
+    margin-top: 20px;
+    background-color: #006aea;
+    color: white;
+  }
+
+  .containerParrafos p {
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .faviconFooter {
+    width: 50px;
+    height: auto;
+  }
+
+  .containerContenido {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .columna1 {
+    width: 100%;
+  }
+
+  .columna1 button {
+    margin-left: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+
+  .containerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+}
