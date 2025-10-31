@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --header-height: 29px;
+}
+
+html {
+  scroll-padding-top: var(--header-height);
+}
+
+h1,
+h2,
+h3,
+section {
+  scroll-margin-top: calc(var(--header-height) + 10px);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+header p {
+  color: black;
+}
+
+header h1,
+p {
+  margin: 0;
+  padding: 0 10px;
+}
+
+header h1 {
+  color: #006aea;
+}
+
+header i {
+  color: red !important;
+}
+
+.hero {
+  position: relative;
+  height: 92.6vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 20px;
+}
+
+.content button {
+  background-color: #006aea;
+  box-shadow: 0 0 12px #006aea;
+  color: #fff;
+  transition: 0.3s;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.content h1,
+p {
+  margin: 0;
+}
+
+.containerMainGoCity {
+  background-color: #006aea;
+  color: white;
+  padding: 80px 0;
+  gap: 20px;
+}
+
+.containerTextGo {
+  gap: 20px;
+}
+
+.containerTextGo h2,
+p {
+  margin: 0;
+}
+
+.containerCard {
+  background-color: #004daa;
+  width: 450px;
+  height: auto;
+  gap: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #004daa;
+}
+
+.containerCard i {
+  font-size: 30px;
+  color: white;
+}
+
+.containerCard h3,
+.containerCard p {
+  margin: 0;
+  color: white;
+}
+
+.containerExperiencias {
+  background-color: #e0e0e0;
+  padding: 80px 0;
+  gap: 30px;
+}
+
+.containerTextExperiencias {
+  gap: 10px;
+}
+
+.containerTextExperiencias h2,
+.containerTextExperiencias p {
+  color: #006aea;
+  margin: 0;
+}
+
+#carouselExampleAutoplaying {
+  height: 300px;
+}
+
+.carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 500px; /* mejor que un ancho fijo */
+  max-width: 600px; /* opcional */
+  height: 300px; /* igual al del contenedor */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 10px;
+}
+
+.containerMainCarouMaps {
+  gap: 300px;
+}
+
+.containerMainCarouMaps iframe {
+  border: none;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.containerTextTests {
+  gap: 10px;
+}
+
+.containerTextTests h2,
+.containerTextTests p {
+  margin: 0;
+  color: black;
+}
+
+.containerSecOpiniones {
+  gap: 30px;
+  padding: 80px 0;
+}
+
+.containerColsOpiniones {
+  gap: 50px;
+}
+
+.containerCardOpi {
+  width: 350px;
+  height: auto;
+  padding: 10px 10px;
+}
+
+.containerCardOpi i {
+  font-size: 30px;
+  color: black;
+}
+
+.containerVidOpiniones {
+  gap: 20px;
+}
+
+.containerVidOpiniones video {
+  border-radius: 10px;
+  height: 600px;
+  width: 80%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#btnAudio {
+  width: 180px;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.containerApp {
+  background-color: #006aea;
+  color: white;
+  padding: 80px 0;
+  gap: 30px;
+}
+
+.containerMainApp {
+  gap: 30px;
+}
+
+.containerTextApp h3,
+.containerTextApp p {
+  margin: 0;
+}
+
+.containerTextApp {
+  text-align: center;
+  width: 50%;
+  gap: 30px;
+}
+
+.containerIconsApp {
+  gap: 30px;
+  font-size: 30px;
+}
+
+.containerIconsApp a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.containerMainForm {
+  background-color: #e0e0e0;
+  color: #006aea;
+  padding: 80px 0;
+}
+
+.containerTextForm {
+  gap: 25px;
+}
+
+.containerTextForm h2,
+p {
+  margin: 0;
+}
+
+.containerForm {
+  margin-top: 30px;
+}
+
+.containerForm form {
+  width: 500px;
+  gap: 20px;
+}
+
+.containerInputs {
+  width: 100%;
+}
+
+.containerForm button {
+  background-color: #006aea;
+  box-shadow: 0 0 12px #006aea;
+  color: #fff;
+  transition: 0.3s;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.containerForm button:hover {
+  background-color: #004daa;
+  box-shadow: 0 0 12px #004daa;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.containerFooter {
+  background-color: #006aea;
+  color: white;
+  padding: 20px 0;
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  color: #006aea;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px #006aea;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#btnTop:hover {
+  background-color: #004daa;
+  box-shadow: 0 0 12px #006aea;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: white;
+  color: #006aea;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 0 10px #006aea;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  background-color: #004daa;
+  box-shadow: 0 0 12px #006aea;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Oculto por defecto: no animar ni mostrar al cargar */
+.animate-on-scroll {
+  opacity: 0;
+}
+/* Cuando se active (el JS agregará animate__animated) */
+.animate-on-scroll.animate__animated {
+  opacity: 1;
+}
+
+/*Media Queries*/
+
+@media (max-width: 480px) {
+  header {
+    text-align: center;
+  }
+
+  .hero {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .containerTextGo {
+    width: 90%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .containerRowCols {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .containerTextExperiencias {
+    width: 90%;
+    text-align: center;
+  }
+
+  #carouselExampleAutoplaying {
+    height: 200px;
+  }
+
+  .carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 330px;
+    height: 300px;
+  }
+
+  .carousel-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .containerMainCarouMaps {
+    gap: 50px;
+  }
+
+  .containerMainCarouMaps iframe {
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+  }
+
+  .containerTextTests {
+    width: 90%;
+    text-align: center;
+  }
+
+  .containerCardOpi {
+    width: 300px;
+    height: auto;
+    padding: 10px 10px;
+  }
+
+  .containerRowsOpiniones {
+    gap: 50px;
+  }
+
+  .containerVidOpiniones video {
+    border-radius: 10px;
+    height: 400px;
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .containerTextApp {
+    text-align: center;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .containerInputs {
+    width: 90%;
+  }
+
+  .containerFooter {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .containerFooter p {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  #btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: white;
+    color: #006aea;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #006aea;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    background-color: white;
+    color: #006aea;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 0 10px #006aea;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+}
