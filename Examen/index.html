@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go City | CG</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/maps.png">
+
+    <!-- Carga de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Carga de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Carga de iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--Carga de Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Carga de CSS-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header class="container-fluid d-flex justify-content-center align-items-center">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid containerItemsNav">
+                <h1 class="animate-on-scroll" data-animate="animate__fadeInLeft animate__delay-500ms animate__slow"><i
+                        class="bi bi-geo-alt-fill"></i> Go City</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center flex-wrap">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beneficios">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destinos">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aplicacion">Aplicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero container-fluid">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Go City</h1>
+            <p>Tu próxima aventura empieza aquí</p>
+            <a href="#inicio" class="animate-on-scroll" data-animate="animate__pulse animate__infinite"><button
+                    class="btn btn-primary">Descúbrela</button></a>
+        </div>
+    </section>
+
+    <section id="beneficios"
+        class="containerMainGoCity container-fluid d-flex justify-content-center align-items-center flex-column">
+
+        <div class="containerTextGo d-flex flex-column justify-content-center align-items-center">
+            <h2>¿Por qué viajar con Go City?</h2>
+            <p>A continuación, te presentamos algunas razones:</p>
+        </div>
+
+        <div class="containerRowCols container-fluid row">
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div class="containerCard d-flex justify-content-center align-items-center text-center card animate-on-scroll"
+                    data-animate="animate__fadeIn animate__delay-500ms animate__slow">
+                    <i class="bi bi-globe2"></i>
+                    <h3>Variedad de destinos</h3>
+                    <p>Ofrecemos una amplia gama de destinos para que elijas</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div class="containerCard d-flex justify-content-center align-items-center text-center card animate-on-scroll"
+                    data-animate="animate__fadeIn animate__delay-1s animate__slow">
+                    <i class="bi bi-cash-stack"></i>
+                    <h3>Ahorrá dinero</h3>
+                    <p>Ofrecemos precios competitivos y promociones especiales</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div class="containerCard d-flex justify-content-center align-items-center text-center card animate-on-scroll"
+                    data-animate="animate__fadeIn animate__delay-2s animate__slow">
+                    <i class="bi bi-google-play"></i>
+                    <h3>Acceso a la mano</h3>
+                    <p>En nuestra app encontrarás todo lo que necesites para tu viaje</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerButton animate-on-scroll" data-animate="animate__fadeIn animate__delay-1s animate__slow">
+            <a href="GuíaRápida.pdf" download="GuíaRápida.pdf" class="btn btn-primary btnDownload">Descargar Guía
+                Rápida</a>
+        </div>
+    </section>
+
+    <section id="destinos"
+        class="container-fluid containerExperiencias d-flex justify-content-center align-items-center flex-column">
+
+        <div class="containerTextExperiencias d-flex flex-column justify-content-center align-items-center ">
+            <h2>Destinos más famosos</h2>
+            <p>Descubre algunos de los destinos más populares entre nuestros usuarios</p>
+        </div>
+
+        <div class="container-fluid containerRow row">
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/tokio.jpg" alt="Imagen de Tokio" class="img-fluid">
+                    <h3>Tokio</h3>
+                    <p>La vibrante capital de Japón, conocida por su mezcla única de tradición y modernidad.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#tokio">Descubrir</a></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/cancun.jpg" alt="Imagen de Cancún" class="img-fluid">
+                    <h3>Cancún</h3>
+                    <p>Un paraíso tropical en México, famoso por sus playas de arena blanca y aguas cristalinas.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#cancun">Descubrir</a></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/paris.jpg" alt="Imagen de París" class="img-fluid">
+                    <h3>París</h3>
+                    <p>La ciudad del amor, famosa por su arquitectura icónica y su rica historia cultural.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#paris">Descubrir</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid containerRow row">
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/hongKong.jpg" alt="Imagen de Hong Kong" class="img-fluid">
+                    <h3>Hong Kong</h3>
+                    <p>Una metrópolis dinámica donde la tradición oriental se mezcla con modernos rascacielos y mercados
+                        vibrantes.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#hongKong">Descubrir</a></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/lasVegas.jpg" alt="Imagen de Las Vegas" class="img-fluid">
+                    <h3>Las Vegas</h3>
+                    <p>La ciudad del entretenimiento y la vida nocturna, famosa por sus casinos, espectáculos y opciones
+                        de ocio sin fin.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#lasVegas">Descubrir</a></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/londres.jpg" alt="Imagen de Londres" class="img-fluid">
+                    <h3>Londres</h3>
+                    <p>Capital histórica del Reino Unido, famosa por sus monumentos icónicos, museos y su rica vida
+                        cultural.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#londres">Descubrir</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid containerRow row">
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/madrid.jpg" alt="Imagen de Madrid" class="img-fluid">
+                    <h3>Madrid</h3>
+                    <p>La vibrante capital de España, conocida por su rica historia, cultura y vida nocturna.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#madrid">Descubrir</a></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/miami.jpg" alt="Imagen de Miami" class="img-fluid">
+                    <h3>Miami</h3>
+                    <p>Ciudad vibrante en Florida, conocida por sus playas soleadas, su animada vida nocturna y su
+                        estilo art déco.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#miami">Descubrir</a></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center containerItemsDestinos">
+                    <img src="img/roma.jpg" alt="Imagen de Roma" class="img-fluid">
+                    <h3>Roma</h3>
+                    <p>La ciudad eterna, conocida por su historia antigua, arquitectura impresionante y deliciosa
+                        gastronomía.</p>
+                    <button class="btn btn-primary btnDestinos"><a href="#roma">Descubrir</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios"
+        class="containerSecOpiniones d-flex justify-content-center align-items-center flex-column container-fluid">
+
+        <div class="containerTextTests d-flex flex-column justify-content-center align-items-center ">
+            <h2>Opiniones de usuarios</h2>
+            <p>Descubre lo que nuestros usuarios dicen sobre sus experiencias</p>
+        </div>
+
+        <div class="containerRowsOpiniones container-fluid row">
+            <div class="containerColsOpiniones d-flex flex-column justify-content-center align-items-center col-md-6">
+                <div class="containerCardOpi d-flex flex-column justify-content-center align-items-center text-center card animate-on-scroll"
+                    data-animate="animate__fadeInLeft animate__delay-500ms animate__slow">
+                    <i class="bi bi-person-circle"></i>
+                    <h3>María G.</h3>
+                    <p>"Go City hizo que mi viaje fuera inolvidable. La facilidad de uso de la
+                        app
+                        es increíble."</p>
+                </div>
+                <div class="containerCardOpi d-flex flex-column justify-content-center align-items-center text-center card animate-on-scroll"
+                    data-animate="animate__fadeInLeft animate__delay-1s animate__slow">
+                    <i class="bi bi-person-circle"></i>
+                    <h3>Juan P.</h3>
+                    <p>"La experiencia con Go City fue fantástica. Cada lugar que visité superó mis expectativas."</p>
+                </div>
+                <div class="containerCardOpi d-flex flex-column justify-content-center align-items-center text-center card animate-on-scroll"
+                    data-animate="animate__fadeInLeft animate__delay-2s animate__slow">
+                    <i class="bi bi-person-circle"></i>
+                    <h3>Pedro S.</h3>
+                    <p>"La atención al cliente de Go City es excepcional. Siempre dispuestos a ayudar y resolver
+                        cualquier duda."</p>
+                </div>
+            </div>
+
+            <div class="containerVidOpiniones d-flex justify-content-center align-items-center flex-column col-md-6">
+                <video autoplay muted loop playsinline>
+                    <source src="video/testimonios.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="aplicacion"
+        class="d-flex flex-column justify-content-center align-items-center container-fluid containerApp ">
+
+        <div class="d-flex justify-content-center align-items-center flex-wrap  containerMainApp">
+
+            <div class="containerTextApp d-flex flex-column justify-content-center align-items-center">
+                <h3>Descarga la app Go City</h3>
+                <p>Tiene todo lo que necesitas para explorar sin complicaciones: información práctica, consejos de viaje
+                    y mucho, mucho más.</p>
+            </div>
+
+            <img src="img/app.avif" alt="App de Go City" class="img-fluid animate-on-scroll"
+                data-animate="animate__fadeInUp animate__delay-500ms animate__slow">
+
+            <div class="d-flex justify-content-center align-items-center containerIconsApp">
+                <a href="https://apps.apple.com/es/app/go-city-planificador-y-tiques/id1466065511"><i
+                        class="bi bi-apple"></i>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.gocitypass&hl=es"> <i
+                        class="bi bi-google-play"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacto"
+        class="containerMainForm d-flex flex-column justify-content-center align-items-center container-fluid">
+        <div class="containerTextForm d-flex justify-content-center align-items-center flex-column text-center">
+            <h2>Nuestros medios de contacto</h2>
+            <p>Puedes contactarnos por correo electrónico, redes sociales o desde nuestra app.</p>
+        </div>
+
+        <div class="container-fluid containerRowContact row">
+            <div class="d-flex flex-column justify-content-center align-items-center col-md-4 containerRedesSociales animate-on-scroll"
+                data-animate="animate__fadeIn animate__delay-500ms animate__slow">
+                <h5>Síguenos en:</h5>
+                <div class="containerIconsContact d-flex justify-content-center align-items-center">
+                    <a href="https://www.facebook.com/GoCityOfficial"
+                        class="d-flex justify-content-center align-items-center"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/gocity"
+                        class="d-flex justify-content-center align-items-center"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/GoCityOfficial"
+                        class="d-flex justify-content-center align-items-center"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.youtube.com/channel/UCckhZqZxBLX_qauNE2lj3wg"
+                        class="d-flex justify-content-center align-items-center"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center col-md-4">
+                <div class="containerIconMail d-flex justify-content-center align-items-center flex-column animate-on-scroll"
+                    data-animate="animate__fadeIn animate__delay-1s animate__slow">
+                    <h5>Contáctanos por:</h5>
+                    <a href="mailto:gocitywrld@gmail.com"
+                        class="d-flex justify-content-center align-items-center containerMail"><i
+                            class="bi bi-envelope-fill"></i>gocitywrld@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center col-md-4 containerAppDownload animate-on-scroll"
+                data-animate="animate__fadeIn animate__delay-2s animate__slow">
+                <h5>Consigue la app Go City</h5>
+                <div class="d-flex justify-content-center align-items-center containerLinksApp">
+                    <a href="https://apps.apple.com/es/app/go-city-planificador-y-tiques/id1466065511"
+                        class="d-flex justify-content-center align-items-center containerAppStore"><i
+                            class="bi bi-apple"></i>App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gocitypass&hl=es"
+                        class="d-flex justify-content-center align-items-center containerGooglePlay"><i
+                            class="bi bi-google-play"></i>Google Play</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="containerFooter d-flex justify-content-center align-items-center flex-column text-center">
+            <p>&copy; 2025 Go City | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="btnTop" title="Volver arriba">
+        ↑
+    </button>
+
+    <!-- Carga de Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Archivo JS principal -->
+    <script src="js/btnTop.js"></script>
+    <script src="js/animateCss.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
