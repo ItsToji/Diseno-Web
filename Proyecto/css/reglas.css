@@ -1,0 +1,159 @@
+/* Form desktop */
+#contact-form {
+  width: 35%;
+}
+
+@media (max-width: 768px) {
+  /* Form móvil */
+  #contact-form {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 360px) {
+  /*Estilos de Index.html*/
+  header a img {
+    display: none;
+  }
+
+  .navbar-nav {
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  .backvideo {
+    position: relative;
+    width: 100%;
+    height: 92.4vh;
+    overflow: hidden;
+  }
+
+  .contenido-video h1 {
+    font-size: 2.5rem;
+  }
+
+  .contenido-video p {
+    font-size: 1rem;
+  }
+
+  .rowContainer {
+    gap: 30px;
+  }
+
+  .containerCategorías {
+    height: 200px;
+    width: 300px;
+  }
+
+  .carousel-inner {
+    height: 80.7vh; /* ajustar según lo que quieras que mida el carrusel */
+    width: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-inner img {
+    filter: brightness(50%);
+  }
+
+  .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* hace que la imagen cubra el contenedor sin deformarse */
+    object-position: center; /* centra la imagen dentro del contenedor */
+  }
+  /*Estilos de Index.html*/
+
+  /*Estilos Hombres*/
+
+  /*Inicio de Título Hombres*/
+  .containerTittleHombres {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .containerLinks a {
+    margin-right: 5px;
+  }
+  /*Cierre de Título Hombres*/
+
+  /*Inicio de Logos*/
+  .containerRowLogos {
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .containerColImg {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+
+  .containerRowLogos img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .containerRowLogos {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  /*Cierre de Logos*/
+
+  /*Estilos Base Main Marcas*/
+  .cardProduct {
+    height: 450px;
+    width: 325px;
+  }
+
+  .cardProduct a,
+  img {
+    height: 350px;
+  }
+
+  .row {
+    padding: 0px;
+  }
+  /*Cierre Estilos Base Main Marcas*/
+
+  /*Inicio Deportes*/
+
+  .row {
+    gap: 30px;
+    padding: 0px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  svg {
+    padding-top: 30px;
+  }
+
+  /*Cierre Deportes*/
+
+  /*Inicio Contactenos*/
+  #contact-form {
+    width: 95% !important;
+    padding: 0 10px;
+  }
+  
+  .containerTittleHombres {
+    padding-left: 20px !important;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  /*Cierre Contactenos*/
+}

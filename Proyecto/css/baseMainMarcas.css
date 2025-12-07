@@ -1,0 +1,121 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+:root {
+  --header-height: 100px;
+}
+
+section {
+  scroll-margin-top: calc(var(--header-height) + 0.5rem);
+}
+
+/*Inicio de Header*/
+header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+.navbar-nav li {
+  transition: all 0.3s ease;
+}
+
+.navbar-nav li:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/*Cierre de Header*/
+/*Inicio de Título Nike*/
+.containerTittleHombres {
+  padding: 35px 0px;
+  background-color: white;
+  color: black;
+  padding-left: 100px;
+}
+
+.containerLinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+/*Cierre de Título Nike*/
+/*Inicio de Cards Productos*/
+.cardProduct {
+  height: 450px;
+  width: 350px;
+}
+
+.cardProduct a,
+img {
+  height: 200px;
+}
+
+.cardProduct img,
+.cardProduct a {
+  height: 100%;
+  width: 100%;
+}
+
+.cardProduct a {
+  transition: all 0.3s ease;
+}
+
+.cardProduct {
+  transition: all 0.3s ease;
+}
+
+.cardProduct:hover {
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+}
+
+.containerText {
+  width: 100%;
+}
+
+.row {
+  padding: 0 200px;
+  background-color: white;
+}
+
+/*Inicio de Footer*/
+footer {
+  margin-top: 30px;
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+  background-color: black;
+}
+
+/*Cierre de Footer*//*# sourceMappingURL=baseMainMarcas.css.map */

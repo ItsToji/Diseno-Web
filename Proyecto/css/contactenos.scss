@@ -1,0 +1,106 @@
+$background-primary-color: white;
+$background-secondary-color: black;
+$font-primary: "Poppins", sans-serif;
+$font-color-primary: black;
+$font-color-secondary: white;
+$font-size-h1: 3rem;
+$font-size-primary-p: 1.2rem;
+$font-size-secondary-p: 1rem;
+$padding-top-bottom: 35px 0px;
+$effect-hover: scale(1.05);
+$effect-transition: all 0.3s ease;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+:root {
+  --header-height: 100px;
+}
+
+section {
+  scroll-margin-top: calc(var(--header-height) + 0.5rem);
+}
+
+/*Inicio de Header*/
+header {
+  background-color: $background-primary-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+.navbar-nav li {
+  transition: $effect-transition;
+}
+
+.navbar-nav li:hover {
+  transform: $effect-hover;
+  transition: $effect-transition;
+}
+
+/*Cierre de Header*/
+
+/*Inicio de Título Nike*/
+.containerTittleHombres {
+  padding: $padding-top-bottom;
+  background-color: $background-primary-color;
+  color: $font-color-primary;
+  padding-left: 100px;
+}
+
+.containerLinks a {
+  text-decoration: none;
+  color: $font-color-primary;
+  font-size: $font-size-secondary-p;
+  margin-right: 5px;
+}
+
+/*Cierre de Título Nike*/
+
+/*Inicio de Cards Productos*/
+
+.btnForm {
+  background-color: $background-secondary-color;
+  border: none;
+}
+
+.btnForm:hover {
+  background-color: rgb(41, 41, 41);
+  color: $font-color-secondary;
+}
+
+/*Inicio de Footer*/
+footer {
+  background-color: $font-color-primary;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  color: $font-color-secondary;
+  font-size: 1rem;
+  background-color: $font-color-primary;
+}
+
+/*Cierre de Footer*/
