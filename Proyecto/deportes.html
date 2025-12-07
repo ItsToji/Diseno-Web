@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRYKA | Deportes</title>
+
+    <!-- Estilos -->
+    <link rel="icon" type="image/x-icon" href="img/faviconSTRY.png">
+    <!-- Google Fonts optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/deportes.css">
+    <link rel="stylesheet" href="css/reglas.css">
+    <!-- Cierre Estilos -->
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-wrap" id="navbar-toggler">
+                    <a class="navbar-brand" href="#inicio"><img src="img/nombreTienda.png" alt=""></a>
+                    <ul class="navbar-nav ms-auto flex-wrap">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hombres.html">HOMBRES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mujeres.html">MUJERES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="niños.html">NIÑOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">DEPORTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accesorios.html">ACCESORIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">CONTÁCTENOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio"
+            class="container-fluid d-flex justify-content-start align-items-center containerTittleHombres">
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-start text-center">
+                <div class="containerLinks d-flex justify-content-center align-items-center">
+                    <p><a href="index.html">Inicio</a>/<a href="#inicio"> Deportes</a></p>
+                </div>
+                <h1 class="m-0">Próximamente</h1>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <img src="img/FC.jpg" class="card-img-top" alt="Imagen de evento deportivo">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title d-flex justify-content-center align-items-center">Fútbol</h5>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header pb-2" style="width: 255px;">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Información
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group ">
+                                                <li class="list-group-item"><b>Fecha:</b> 12/12/25</li>
+                                                <li class="list-group-item"><b>Lugar</b> Estadio Nacional</li>
+                                                <li class="list-group-item"><b>Precio:</b> ₡ 5.000</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <button type="button"
+                                class="btnModal btn btn-primary d-flex justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Evento
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Colaboración con Nike
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video width="100%" height="250px" src="video/colabNike.mp4"
+                                                type="video/mp4" controls autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btnModal btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <img src="img/NFL.jpg" class="card-img-top" alt="Imagen de evento deportivo">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title d-flex justify-content-center align-items-center">Fútbol Americano</h5>
+                            <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header pb-2" style="width: 255px;">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Información
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample2">
+                                        <div class="accordion-body">
+                                            <ul class="list-group ">
+                                                <li class="list-group-item"><b>Fecha:</b> 13/12/25</li>
+                                                <li class="list-group-item"><b>Lugar</b> Estadio Nacional</li>
+                                                <li class="list-group-item"><b>Precio:</b> ₡ 5.000</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <button type="button"
+                                class="btnModal btn btn-primary d-flex justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#modalNFL">
+                                Evento
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalNFL" tabindex="-1" aria-labelledby="modalNFLLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalNFLLabel">Colaboración con NFL
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video width="100%" height="250px" src="video/colabNFL.mp4" type="video/mp4"
+                                                controls autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btnModal btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <img src="img/NBA.jpg" class="card-img-top" alt="Imagen de evento deportivo">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title d-flex justify-content-center align-items-center">Baloncesto</h5>
+                            <div class="accordion accordion-flush" id="accordionFlushExample3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header pb-2" style="width: 255px;">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Información
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample3">
+                                        <div class="accordion-body">
+                                            <ul class="list-group ">
+                                                <li class="list-group-item"><b>Fecha:</b> 14/12/25</li>
+                                                <li class="list-group-item"><b>Lugar</b> Estadio Nacional</li>
+                                                <li class="list-group-item"><b>Precio:</b> ₡ 5.000</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <button type="button"
+                                class="btnModal btn btn-primary d-flex justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#modalNBA">
+                                Evento
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalNBA" tabindex="-1" aria-labelledby="modalNBALabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalNBALabel">Colaboración con NBA
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video width="100%" height="250px" src="video/colabJames.mp4"
+                                                type="video/mp4" controls autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btnModal btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 215">
+            <path fill="#000000" fill-opacity="1"
+                d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,154.7C1120,149,1280,75,1360,37.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <p>© 2024 STRYKA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

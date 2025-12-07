@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRYKA | Inicio</title>
+
+    <!-- Estilos -->
+    <link rel="icon" type="image/x-icon" href="img/faviconSTRY.png">
+    <!-- Google Fonts optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reglas.css">
+    <!-- Cierre Estilos -->
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-wrap" id="navbar-toggler">
+                    <a class="navbar-brand" href="#inicio"><img src="img/nombreTienda.png" alt=""></a>
+                    <ul class="navbar-nav ms-auto flex-wrap">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hombres.html">HOMBRES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mujeres.html">MUJERES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="niños.html">NIÑOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="deportes.html">DEPORTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accesorios.html">ACCESORIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">CONTÁCTENOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio"
+            class="backvideo container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+            <video autoplay muted loop playsinline class="video-fondo">
+                <source src="video/sectionBanner.mp4" type="video/mp4">
+            </video>
+
+            <div id="futuro" class="contenido-video">
+                <h1>Rompe tus Límites</h1>
+                <p>Supera tu ritmo con calzado diseñado para rendimiento, estilo y comodidad en cada paso</p>
+            </div>
+        </section>
+
+        <section class="containerMainCats container-fluid d-flex justify-content-center align-items-center">
+            <div class="rowContainer row container-fluid d-flex justify-content-center align-items-center">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="containerCategorías cat1 d-flex justify-content-center align-items-center">
+                        <a href="hombres.html" class="btnStyle">HOMBRES</a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="containerCategorías cat2 d-flex justify-content-center align-items-center">
+                        <a href="mujeres.html" class="btnStyle">MUJERES</a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="containerCategorías cat3 d-flex justify-content-center align-items-center">
+                        <a href="niños.html" class="btnStyle">NIÑOS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid d-flex justify-content-center align-items-center" style="padding: 0px;">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" style="width: 100%;"
+                data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/adidas.jpg" class="img-fluid" alt="Imagen de Zapatillas Adidas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>ADIDAS</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/nike.jpg" class="img-fluid" alt="Imagen de Zapatillas Nike">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NIKE</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/vans.jpg" class="img-fluid" alt="Imagen de Zapatillas Vans">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>VANS</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/converse.jpg" class="d-block w-100" alt="Imagen de Zapatillas Converse">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>CONVERSE</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <p>© 2024 STRYKA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
